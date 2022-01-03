@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner{
+    background-color: #1f2937;
+}
+.top{
+    color: #e5e7eb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    font-size: 1.5vw;
+}
+
+.logo{
+    flex-grow: 1;
+    padding-bottom: 6vh;
+}
+
+.my_account, .faq{
+    padding-right: 3vw;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 7vh;
+}
+
+.header_1{
+    width: 50vw;
+    min-height: fit-content;
+    font-size: 5vw;
+    font-weight: bolder;
+    color: #f9faf8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5vw;
+}
+
+.ct_head{
+    max-width: 35vw;
+    max-height: fit-content;
+    padding-right: 5vw;
+}
+
+.subheading{
+    max-height: fit-content;
+    max-width: 48vw;
+    font-size: 2vw;
+    color:#f9faf8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5vw;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+.sign_up_button{
+    margin-left: 5vw;
+    margin-top: 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #3882f6;    
+    color: #e5e7eb;
+    width: 10vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 1vw;
+    padding: 0.5vw 1vw;
+}
+
+.container_2 .header{
+    display: flex;
+    justify-content: center;
+    color: #1f2937;
+    font-weight: bolder;
+    font-size: 3vw;
+    flex-grow: 100%;
+}
+
+.container_2 .images{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+}
+
+.container_2 .thumbnail{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 1vw;    
+}
+
+.images .one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.images .two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.images .three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subtext{
+    width: 18vw;
+}
+
+.container_3{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: flex-start;
+    height: fit-content;
+}
+.container_3 .quote{
+    font-style: italic;
+    color: #1f2937;
+    font-size: 3vw;
+    padding-left: 10vw;
+    padding-top: 10vw;
+    padding-right: 10vw;
+}
+.container_3 .quote_author{
+    align-self: flex-end;
+    font-style: bold;
+    color: #1f2937;
+    font-size: 2.5vw;
+    padding-right: 10vw;
+    padding-bottom: 10vw;
+}
+.container_4{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882f6;
+    margin: 10vw 5vw;
+    border-radius: 1.5vw;
+    color: #f9faf8;
+}
+.container_4 .call_to_action{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;    
+}
+.container_4 .call_to_action_header{
+    font-size: 2.5vw;
+    font-weight: bolder;
+    height: fit-content;
+    width: 30vw;
+}    
+.container_4 .sign_up_2{
+    align-self: center;
+    margin-right: 8vw;
+    font-size: 2.5vw;
+    border-radius: 1vw;
+    border-color: #f9faf8;
+    border-style: solid;
+    padding: 1vw;
+}
+footer{
+    text-align: center;
+    background-color: #474746;
+    color: #f9faf8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
