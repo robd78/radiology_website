@@ -33,4 +33,13 @@ for (index = 0; index < accordion.length; index++) {
         }
         
     });
+
+    let allStepsTogether = document.getElementsByClassName("item_check");
+    let allPanelsTogether = document.getElementsByClassName("panel");
+
+    for (let i = 0; i < allStepsTogether.length; i++) {
+        allStepsTogether[i].id = ("step_" + (i + 1));
+        allPanelsTogether[i].id = ("panel_" + (i + 1));
+    }
+
 }
