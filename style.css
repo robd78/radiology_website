@@ -5,38 +5,56 @@
 
 .banner{
     background-color: #1f2937;
+    display: grid;
+    grid-template-columns: 1fr 8fr auto auto;
+    grid-template-rows: 1fr auto;
 }
 .top{
     color: #e5e7eb;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10fr auto auto auto;
     font-size: 1.5vw;
+    grid-row-start: 1;
+    grid-column: 1/span 5;
 }
 
 .logo{
     flex-grow: 1;
     padding-bottom: 6vh;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
+.my_account {
+    grid-column-start: 4;
+    text-align: center;
+}
+
+.faq {
+    grid-column-start: 5;
+    text-align: right;
+}
 .my_account, .faq{
-    padding-right: 3vw;
+    padding-right: 3vw; 
 }
 
 .container{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-column: 1 /span 5;
     padding-bottom: 7vh;
+    grid-row-start: 2;
 }
 
 .header_1{
-    width: 50vw;
-    min-height: fit-content;
+    width: 60vw;
     font-size: 5vw;
     font-weight: bolder;
     color: #f9faf8;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-left: 5vw;
+    grid-row-start: 2;
+    grid-column-start: 2;
 }
 
 .ct_head{
@@ -51,15 +69,14 @@
     font-size: 2vw;
     color:#f9faf8;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-left: 5vw;
+    grid-row-start: 3;
+    grid-column-start: 2;
 }
 
 .heading{
-    display: flex;
-    flex-direction: column;
+    grid-column-start: 2;
 }
 .sign_up_button{
-    margin-left: 5vw;
     margin-top: 2vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #3882f6;    
@@ -179,38 +196,21 @@ footer{
 
 }
 .search_list{
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;*/
     display: grid;
     grid-template-columns: 1fr 7fr 1fr 2fr 1fr;
-}
-
-.search_list .reviewed {
-    grid-column-start: 4;
-}
-.search_list .item_check {
-    grid-column-start: 2;
-}
-/*#panel_1 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-}*/
-
-.panel {
-    grid-column-start: 2;
+    background-color: #ffffff;
 }
 .grid_row_1 {
-    grid-row:span 1;
+    grid-row-end:span 1;
 }
 
 .grid_row_2 {
-    grid-row: span 2;
+    grid-row-end: span 2;
 }
 
 
 .search_list .reviewed{
+    grid-column-start: 4;
     font-size: 2vw;
     font-weight: bolder;
     color: #091336;
@@ -220,6 +220,7 @@ footer{
 }
 
 .search_list .item_check{
+    grid-column-start: 2;
     font-size: 2vw;
     font-weight: bolder;
     color: #091336;
@@ -234,6 +235,7 @@ footer{
 }
 
 .panel {
+    grid-column-start: 2;
     padding: 0 18px;
     background-color: whitesmoke;
     display: none;
@@ -246,16 +248,37 @@ footer{
 
 .container_report_1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: auto;
-    background-color: #f9faf8;
+    background-color: #e5e7eb;
     justify-content: center;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
 
 }
 
 .norm_rep {
+    grid-column-start: 2;
+    font-size: 3vw;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-font-size: 3vw;
-color:#101996;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.sub_container_1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.home_link {
+    grid-column-start: 3;
+    padding-right: 3vw;
+}
+.heading_picture {
+    grid-column-start: 3;
+    grid-row: 2 /span 2;
+    max-width: 25vw;
+    max-height: 15vw;
+    padding-right: 5vw;
 }
